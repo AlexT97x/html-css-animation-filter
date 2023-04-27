@@ -178,6 +178,7 @@
     width: 60px;
     height: 20px;
 }
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -185,4 +186,76 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: es13 3s linear;
+}
+
+@keyframes es13{
+    0%{
+        left: 10%;
+        top: -10px;
+    }
+
+    20%{
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+
+    40%{
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+
+    60%{
+        left: 0;
+        top: 100%;
+    }
+
+    80%{
+        left: -15px;
+        top: -10px;
+    }
+
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: es13-2 3s linear;
+}
+
+@keyframes es13-2{
+    0%{
+        left: -10px;
+        right: 20%;
+    }
+
+    20%{
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+
+    40%{
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+
+    60%{
+        right: 0;
+        bottom: 100%;
+    }
+
+    80%{
+        right: -15px;
+        bottom: -10px;
+    }
+
+    100%{
+        bottom: -10px;
+        right: 20%;
+    }
 }
