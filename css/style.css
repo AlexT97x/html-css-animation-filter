@@ -189,7 +189,7 @@
 }
 
 .ex-13-button:hover .ex-13-top-white{
-    animation: es13 3s linear;
+    animation: es13 2s linear infinite;
 }
 
 @keyframes es13{
